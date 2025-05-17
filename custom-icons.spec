@@ -1,3 +1,7 @@
+%define _debugsource_template %{nil}
+%define debug_package %{nil}
+
+
 Name:           custom-icons
 Version:        0.1
 Release:        0%{?dist}
