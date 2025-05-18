@@ -1,10 +1,6 @@
-%define _debugsource_template %{nil}
-%define debug_package %{nil}
-
-
 Name:           custom-icons
 Version:        0.1
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        CC0
@@ -15,13 +11,13 @@ Installs custom icons for my .desktop files to the system icon directory.
 
 %install
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/Apple-logo.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/albion-online.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/alice-madness.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/appimage.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
-mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
-cp -a "icons/hicolor/256x256/apps/Apple-logo.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/astroneer.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
@@ -97,8 +93,6 @@ cp -a "icons/hicolor/256x256/apps/monitor.png" "%{buildroot}/usr/share/icons/hic
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/necesse.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
-cp -a "icons/hicolor/256x256/apps/nfs.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
-mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/nfs-heat.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/nfs-mw.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
@@ -106,6 +100,8 @@ mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/nfs-payback.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/nfs-unbound.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/nfs.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/nier-automata.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
@@ -187,23 +183,25 @@ cp -a "icons/hicolor/256x256/apps/valheim.png" "%{buildroot}/usr/share/icons/hic
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/vintage-story.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
-cp -a "icons/hicolor/256x256/apps/wiiu-downloader.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
-mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/wii-u-nintendo.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/wiiu-downloader.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/windbound.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/wine.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/wow.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/yazi.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 
 
 %files
 %license
+/usr/share/icons/hicolor/256x256/apps/Apple-logo.png
 /usr/share/icons/hicolor/256x256/apps/albion-online.png
 /usr/share/icons/hicolor/256x256/apps/alice-madness.png
 /usr/share/icons/hicolor/256x256/apps/appimage.png
-/usr/share/icons/hicolor/256x256/apps/Apple-logo.png
 /usr/share/icons/hicolor/256x256/apps/astroneer.png
 /usr/share/icons/hicolor/256x256/apps/baldurs-gate-3.png
 /usr/share/icons/hicolor/256x256/apps/battle-net.png
@@ -241,11 +239,11 @@ cp -a "icons/hicolor/256x256/apps/wow.png" "%{buildroot}/usr/share/icons/hicolor
 /usr/share/icons/hicolor/256x256/apps/mod-organizer.png
 /usr/share/icons/hicolor/256x256/apps/monitor.png
 /usr/share/icons/hicolor/256x256/apps/necesse.png
-/usr/share/icons/hicolor/256x256/apps/nfs.png
 /usr/share/icons/hicolor/256x256/apps/nfs-heat.png
 /usr/share/icons/hicolor/256x256/apps/nfs-mw.png
 /usr/share/icons/hicolor/256x256/apps/nfs-payback.png
 /usr/share/icons/hicolor/256x256/apps/nfs-unbound.png
+/usr/share/icons/hicolor/256x256/apps/nfs.png
 /usr/share/icons/hicolor/256x256/apps/nier-automata.png
 /usr/share/icons/hicolor/256x256/apps/nier-replicant.png
 /usr/share/icons/hicolor/256x256/apps/oribf.png
@@ -286,11 +284,12 @@ cp -a "icons/hicolor/256x256/apps/wow.png" "%{buildroot}/usr/share/icons/hicolor
 /usr/share/icons/hicolor/256x256/apps/uefitool.png
 /usr/share/icons/hicolor/256x256/apps/valheim.png
 /usr/share/icons/hicolor/256x256/apps/vintage-story.png
-/usr/share/icons/hicolor/256x256/apps/wiiu-downloader.png
 /usr/share/icons/hicolor/256x256/apps/wii-u-nintendo.png
+/usr/share/icons/hicolor/256x256/apps/wiiu-downloader.png
 /usr/share/icons/hicolor/256x256/apps/windbound.png
 /usr/share/icons/hicolor/256x256/apps/wine.png
 /usr/share/icons/hicolor/256x256/apps/wow.png
+/usr/share/icons/hicolor/256x256/apps/yazi.png
 
 %post
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
@@ -303,5 +302,8 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
-* Sat May 17 2025 sachesi x <sachesi.bb.passp@gmail.com> - 0.1-0
+* Sun May 18 2025 sachesi <sachesi@localhost> - 0.1-1
+- Add yazi icon
+
+* Sat May 17 2025 sachesi <sachesi@localhost> - 0.1-0
 - Initial icon packaging
