@@ -194,7 +194,8 @@ mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/wow.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/yazi.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
-
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/inzoi.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 
 %files
 %license
@@ -290,6 +291,7 @@ cp -a "icons/hicolor/256x256/apps/yazi.png" "%{buildroot}/usr/share/icons/hicolo
 /usr/share/icons/hicolor/256x256/apps/wine.png
 /usr/share/icons/hicolor/256x256/apps/wow.png
 /usr/share/icons/hicolor/256x256/apps/yazi.png
+/usr/share/icons/hicolor/256x256/apps/inzoi.png
 
 %post
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
@@ -302,6 +304,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Fri May 23 2025 sachesi <sachesi@localhost> - 0.1-2
+- Add inzoi icon
+
 * Sun May 18 2025 sachesi <sachesi@localhost> - 0.1-1
 - Add yazi icon
 
