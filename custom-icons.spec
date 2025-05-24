@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.1
-Release:        1%{?dist}
+Release:        3%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        CC0
