@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1-4] - 2025-05-26
+### Added
+- Add last-epoch icon
+
 ## [0.1-3] - 2025-05-23
 ### Added
 - Add eden icon
