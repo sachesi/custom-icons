@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1-5] - 2025-06-22
+### Added
+- Add citron and tkmm icon
+
 ## [0.1-4] - 2025-05-26
 ### Added
 - Add last-epoch icon

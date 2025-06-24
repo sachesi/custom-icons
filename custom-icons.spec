@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -200,6 +200,10 @@ mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/eden.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/last-epoch.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/citron.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/tkmm.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 
 %files
 %license
@@ -298,6 +302,8 @@ cp -a "icons/hicolor/256x256/apps/last-epoch.png" "%{buildroot}/usr/share/icons/
 /usr/share/icons/hicolor/256x256/apps/inzoi.png
 /usr/share/icons/hicolor/256x256/apps/eden.png
 /usr/share/icons/hicolor/256x256/apps/last-epoch.png
+/usr/share/icons/hicolor/256x256/apps/citron.png
+/usr/share/icons/hicolor/256x256/apps/tkmm.png
 
 %post
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
@@ -310,6 +316,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Mon Jun 24 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-5
+- Add citron and tkmm icon
+
 * Mon May 26 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-4
 - Add last-epoch icon
 
