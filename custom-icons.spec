@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -204,6 +204,8 @@ mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/citron.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/tkmm.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/firefox-private.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 
 %files
 %license
@@ -304,6 +306,7 @@ cp -a "icons/hicolor/256x256/apps/tkmm.png" "%{buildroot}/usr/share/icons/hicolo
 /usr/share/icons/hicolor/256x256/apps/last-epoch.png
 /usr/share/icons/hicolor/256x256/apps/citron.png
 /usr/share/icons/hicolor/256x256/apps/tkmm.png
+/usr/share/icons/hicolor/256x256/apps/firefox-private.png
 
 %post
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
@@ -316,8 +319,12 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
-* Mon Jun 24 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-5
-- Add citron and tkmm icon
+%changelog
+* Wed Jul 16 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-6
+- Updated package for new features or fixes.
+
+* Mon Jun 23 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-5
+- Previous changes or fixes.
 
 * Mon May 26 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-4
 - Add last-epoch icon

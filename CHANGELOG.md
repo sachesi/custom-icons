@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1-6] - 2025-07-17
+### Added
+- Add firefox-private icon
+
+
 ## [0.1-5] - 2025-06-22
 ### Added
 - Add citron and tkmm icon
