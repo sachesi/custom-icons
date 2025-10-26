@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1-8] - 2025-08-14
+### Added
+- Add silksong icon, change evolved-pwi icon
+
 ## [0.1-7] - 2025-08-14
 ### Added
 - Add bdo icon

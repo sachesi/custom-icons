@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.1
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -208,6 +208,8 @@ mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/firefox-private.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
 cp -a "icons/hicolor/256x256/apps/bdo.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps"
+cp -a "icons/hicolor/256x256/apps/silksong.png" "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
 
 %files
 %license
@@ -310,6 +312,7 @@ cp -a "icons/hicolor/256x256/apps/bdo.png" "%{buildroot}/usr/share/icons/hicolor
 /usr/share/icons/hicolor/256x256/apps/tkmm.png
 /usr/share/icons/hicolor/256x256/apps/firefox-private.png
 /usr/share/icons/hicolor/256x256/apps/bdo.png
+/usr/share/icons/hicolor/256x256/apps/silksong.png
 
 %post
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
@@ -322,6 +325,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Thu Aug 14 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-8
+- Add silksong icon, change evolved-pwi icon.
+
 * Thu Aug 14 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-7
 - Add bdo icon.
 
