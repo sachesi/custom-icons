@@ -1,6 +1,6 @@
 Name:           custom-icons
-Version:        0.1
-Release:        9%{?dist}
+Version:        0.2
+Release:        0%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,8 +28,8 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
-* Fri Oct 14 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-9
-- Add silksong icon, change evolved-pwi icon.
+* Mon Nov 3 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-0
+- Add nioh and nioh-2 icons.
 
 * Thu Aug 14 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-8
 - Add silksong icon, change evolved-pwi icon.
