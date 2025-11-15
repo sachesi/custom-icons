@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Wed Nov 5 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-1
+- Add sekiro icons.
+
 * Mon Nov 3 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-0
 - Add nioh and nioh-2 icons.
 
