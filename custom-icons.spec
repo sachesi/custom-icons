@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Thu Dec 18 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-3
+- Add pw2 icon.
+
 * Sat Nov 15 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-2
 - Add wwm icon.
 
