@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Set Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-4
+- Add tails-of-iron icon.
+
 * Thu Dec 18 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-3
 - Add pw2 icon.
 
