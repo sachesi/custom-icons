@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Mon Jan 05 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-7
+- Add sky-childrten-of-the-light icon.
+
 * Set Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-6
 - Convert tails-of-iron to png format, rename the-last-campfile to the-last-campfire icon.
 
@@ -75,4 +78,3 @@ fi
 
 * Sat May 17 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.1-0
 - Initial icon packaging.
-
