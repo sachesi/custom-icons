@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,10 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Mon Jan 05 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-8
+- Add no-rest-for-the-wicked and middle-earth-shadow-of-mordor icon,
+  modify darksiders-i, darksiders-ii, windbound and wwm icons.
+
 * Mon Jan 05 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-7
 - Add sky-childrten-of-the-light icon.
 
