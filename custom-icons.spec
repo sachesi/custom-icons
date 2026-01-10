@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Set Jan 10 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-10
+- Add fall-of-avalon icon.
+
 * Fri Jan 09 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-9
 - Change baldurs-gate-3 icon.
 
