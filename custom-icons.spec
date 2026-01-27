@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        10%{?dist}
+Release:        11%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -10,12 +10,12 @@ BuildArch:      noarch
 Installs custom icons for my .desktop files to the system icon directory.
 
 %install
-mkdir -p "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
-cp -a "icons/hicolor/256x256/apps/." "%{buildroot}/usr/share/icons/hicolor/256x256/apps/"
+install -d %{buildroot}/usr/share/icons/hicolor/256x256/apps
+install -m 0644 icons/hicolor/256x256/apps/*.png \
+    %{buildroot}/usr/share/icons/hicolor/256x256/apps/
 
 %files
-%dir /usr/share/icons/hicolor/256x256/apps
-/usr/share/icons/hicolor/256x256/apps/*
+/usr/share/icons/hicolor/256x256/apps/*.png
 
 %post
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
@@ -28,7 +28,10 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
-* Set Jan 10 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-10
+* Tue Jan 27 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-11
+- Add sonic-unleashed icon.
+
+* Sat Jan 10 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-10
 - Add fall-of-avalon icon.
 
 * Fri Jan 09 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-9
@@ -41,13 +44,13 @@ fi
 * Mon Jan 05 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-7
 - Add sky-childrten-of-the-light icon.
 
-* Set Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-6
+* Sat Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-6
 - Convert tails-of-iron to png format, rename the-last-campfile to the-last-campfire icon.
 
-* Set Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-5
+* Sat Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-5
 - Add the-last-campfile icon.
 
-* Set Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-4
+* Sat Dec 20 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-4
 - Add tails-of-iron icon.
 
 * Thu Dec 18 2025 sachesi x <sachesi.bb.passp@proton.me> - 0.2-3
