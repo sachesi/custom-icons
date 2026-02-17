@@ -1,6 +1,6 @@
 Name:           custom-icons
 Version:        0.2
-Release:        11%{?dist}
+Release:        12%{?dist}
 Summary:        Custom icons for my .desktop files
 
 License:        MIT
@@ -28,6 +28,9 @@ if [ -x /usr/bin/gtk-update-icon-cache ]; then
 fi
 
 %changelog
+* Tue Feb 17 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-12
+- Add sonic-unleashed icon.
+
 * Tue Jan 27 2026 sachesi x <sachesi.bb.passp@proton.me> - 0.2-11
 - Add sonic-unleashed icon.
 
